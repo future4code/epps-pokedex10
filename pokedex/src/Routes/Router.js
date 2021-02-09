@@ -13,7 +13,7 @@ export default function Router() {
             <Route exact path='/'>
             <PokemonsList />
             </Route>
-            <Route exact path='/poke-detail/'>
+            <Route exact path='/poke-detail/:id'>
                <PokemonsDetails /> 
             </Route>
             <Route exact path='/pokedex'>
