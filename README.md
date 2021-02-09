@@ -1,16 +1,39 @@
 # POKEDEX
 
-Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+<h4 align='center'>
+👉 Status: 🚧 Em construção... 🚧
+</h4>
 
-Link do Surge: www.link.com.br
+<br />
 
-O que funciona:
-- Item 1
-- Item 2
+### Nome dos integrantes: 
+- Ana Paula
+- Felipe Moura
+- Vivian Costa
 
-O que não funciona: 
-- Item 3
-- Item 4
+### ✨ Funcionamento:
+- [x] Página que lista os Pokemons
+- [x] Rotas para pagina de detalhes, lista e pokedex
+- [ ] Detalhes Pokemon
+- [ ] Adicionar pokemon na pokedex
+
+
+### 💻 Tecnologias:
+As seguintes tecnologias foram usadas na construção do projeto:
+- [React](https://pt-br.reactjs.org/)
+- [JavaScript](https://www.javascript.com/)
+
+### 🎨 Layout:
+- Styled-componentes
+
+
+### 🔗 Link do Surge:
+
+
+
+### 📷 Prints:
+- colocar suas imagens aqui 
+
+<hr />
+
+
