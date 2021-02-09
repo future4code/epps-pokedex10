@@ -36,11 +36,7 @@ export default function PokemonsList() {
 
   
 
-  const pokemon = {
-    name: pokemons.name,
-    img: "https://pokeapi.co/api/v2/pokemon/1"
-  }
- 
+
 
   return (
 
@@ -54,9 +50,12 @@ export default function PokemonsList() {
 
             <CardPokemon />
 
-            <Navbutton onClick={() => goToDetailsPage(history)}>ver detalhes</Navbutton>
+      
+            
+            
 
             <Navbutton>Add a Pokedex</Navbutton>
+
           </InfoPokemon.Provider>
         );
       })}
