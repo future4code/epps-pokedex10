@@ -1,5 +1,6 @@
 import React from "react";
 import InfoPokemon from "./context/context";
+import GlobalState from "./global/GlobalState";
 import Router from "./Routes/Router";
 
 export default function App() {
@@ -16,10 +17,10 @@ export default function App() {
   };
 
   return (
-    <div>
-      <InfoPokemon.Provider valeu={pokemon}>
+    <GlobalState>
+      {/* <InfoPokemon.Provider valeu={pokemon}> */}
         <Router />
-      </InfoPokemon.Provider>
-    </div>
+      {/* </InfoPokemon.Provider> */}
+    </GlobalState>
   );
 }
