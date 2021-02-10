@@ -18,7 +18,7 @@ export default function PokemonsDetails (){
       setFrontImage(res.data.sprites.front_default)
       setBackImage(res.data.sprites.back_default)
       setStatName(res.data.stats)
-      console.log(res.data.stats)
+      // console.log(res.data.stats)
     })
     .catch((err) =>{
       console.log(err)
@@ -27,24 +27,16 @@ export default function PokemonsDetails (){
 
   useEffect(() =>{
     getDetail() 
-  }, [])
+  },[])
 
   
-  console.log(statName[0])
+  // console.log(statName[0].stat.name)
   return (
       <div>
 
         <img src={frontImage}/>
         <img src={backImage} />
         <h1>Poderes</h1>
-        {/* {statName.map((r) => {
-          return(
-            <div>
-
-            <p>Teste {r}</p>
-            </div>
-          )
-        })} */}
 
       </div>
 

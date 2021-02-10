@@ -6,11 +6,11 @@ import InfoPokemon from "../context/context";
 import { goToDetailsPage, goToPokedexPage } from "../Routes/Coordinator";
 import { Navbutton } from "../Styled/Styled";
 
-export default function CardPokemon(props) {
+export default function CardPokemonPokedex(props) {
   const history = useHistory();
   const {states, setters, requests} = useContext(InfoPokemon);
-  const [image, setImage] = useState("");
-  const [id, setId] = useState([]);
+  const [image, setImage] = useState([]);
+  // const [id, setId] = useState([]);
 
   const getImage = () => {
     axios
@@ -18,7 +18,6 @@ export default function CardPokemon(props) {
       .then((res) => {
         // setId(res.data.id);
         setImage(res.data.sprites.front_default);
-        
       })
       .catch((err) => {
         console.log(err);
@@ -26,16 +25,15 @@ export default function CardPokemon(props) {
   };
 
   useEffect(() => {
-    getImage();
+    getImage()
   }, []);
 
   return (
-    <div id={props.id}>
+    <div>
       <h1>Nome: {props.name}</h1>
-      <p>{props.id}</p>
       <img src={image} alt={props.name} />
-      <Navbutton onClick={props.addPokemon} >Add a Pokedex</Navbutton>
-      <Navbutton onClick={() => goToDetailsPage(history, id)}>ver detalhes</Navbutton>
+      <Navbutton onClick={props.removePokemonFromPokedex} >Remover</Navbutton>
+      <Navbutton onClick={() => goToDetailsPage(history)}>ver detalhes</Navbutton>
     </div>
   );
 }

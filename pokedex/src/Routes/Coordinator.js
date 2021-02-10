@@ -9,5 +9,5 @@ export const goToListPage = (history) => {
   };  
 
   export const goToPokedexPage = (history) => {
-    history.push("/pokedex");
+    history.push(`/pokedex`);
   };  
