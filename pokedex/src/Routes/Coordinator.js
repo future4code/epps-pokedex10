@@ -2,9 +2,9 @@ export const goToListPage = (history) => {
     history.push("/");
   };
 
-  export const goToDetailsPage = (history, id) => {
-    if(id !== null){
-      history.push(`/poke-detail/${id}`);
+  export const goToDetailsPage = (history, name) => {
+    if(name !== null){
+      history.push(`/poke-detail/${name}`);
     }
   };  
 

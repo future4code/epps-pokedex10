@@ -1,44 +1,57 @@
-import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { base_URL } from '../../constants/constant';
-import InfoPokemon from '../../context/context';
+import React, { useContext, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export default function PokemonsDetails (){
-  const pathParams = useParams()
-  const [frontImage, setFrontImage] = useState('')
-  const [backImage, setBackImage] = useState('')
-  const [statName, setStatName] = useState([])
-  const pokemon = useContext(InfoPokemon)
+import InfoPokemon from "../../context/context";
 
-  // console.log(pathParams)
+export default function PokemonsDetails() {
+  const pathParams = useParams();
+  const { states, requests } = useContext(InfoPokemon);
 
-  const getDetail = () =>{
-    axios.get(`${base_URL}/${pathParams.id}`).then((res) =>{
-      setFrontImage(res.data.sprites.front_default)
-      setBackImage(res.data.sprites.back_default)
-      setStatName(res.data.stats)
-      // console.log(res.data.stats)
-    })
-    .catch((err) =>{
-      console.log(err)
-    })
-  }
+  useEffect(() => {
+    requests.getDetail(pathParams.name);
+  }, []);
 
-  useEffect(() =>{
-    getDetail() 
-  },[])
+  const pokeStats =
+    states.stats &&
+    states.stats.map((status) => {
+      return (
+        <div>
+          <span>{status.stat.name}</span>
+          <span>{status.base_stat}</span>
+        </div>
+      );
+    });
 
-  
-  // console.log(statName[0].stat.name)
+  const pokeType =
+    states.type &&
+    states.type.map((type) => {
+      return (
+        <div>
+          <span>{type.type.name}</span>
+        </div>
+      );
+    });
+
+  const pokeMoves =
+    states.moves &&
+    states.moves.map((move) => {
+      return (
+        <div>
+          <p>{move.move.name}</p>
+        </div>
+      );
+    });
+
   return (
-      <div>
-
-        <img src={frontImage}/>
-        <img src={backImage} />
-        <h1>Poderes</h1>
-
-      </div>
-
-  )
+    <div>
+      <img src={states.images.front_default} />
+      <img src={states.images.back_default} />
+      <h1>Poderes</h1>
+      {pokeStats}
+      <h1>Tipo</h1>
+      {pokeType}
+      <h1>Ataques</h1>
+      {pokeMoves}
+    </div>
+  );
 }
