@@ -3,6 +3,8 @@ import { useHistory } from "react-router-dom";
 import CardPokemonPokedex from "../../Components/CardPokemonPokedex";
 import InfoPokemon from "../../context/context";
 import { goToDetailsPage } from "../../Routes/Coordinator";
+import {NavPrincipal} from "../../Styled/styledPokedex"
+
 
 
 export default function Pokedex() {
@@ -40,12 +42,12 @@ export default function Pokedex() {
     });
 
   return (
-    <div>
+    <NavPrincipal>
 
 
       {PokeLista}
 
 
-    </div>
+    </NavPrincipal>
   );
 }

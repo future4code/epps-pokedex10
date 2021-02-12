@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, {useEffect, useState } from "react";
 
-import { Navbutton } from "../Styled/Styled";
+import { Navbutton } from "../Styled/StyledCardPokemon";
 
 export default function CardPokemonPokedex(props) {
 

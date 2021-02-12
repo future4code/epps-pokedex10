@@ -5,6 +5,7 @@ import { goToDetailsPage } from "../../Routes/Coordinator";
 
 import CardPokemon from "../../Components/CardPokemon";
 import InfoPokemon from "../../context/context";
+import {NavList} from '../../Styled/styledList';
 
 export default function PokemonsList() {
   const { states, setters, requests } = useContext(InfoPokemon);
@@ -54,7 +55,7 @@ export default function PokemonsList() {
 
   return (
     <div>
-      <h2>PokemonsList</h2>
+      <NavList>PokemonsList</NavList>
       {pokeLista}
     </div>
   );

@@ -1,7 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { goToListPage, goToPokedexPage } from "../Routes/Coordinator";
-import { AppBarContainer,Navbutton,} from "../Styled/Styled";
+import { AppBarContainer,Navbutton1,Pokedex} from "../Styled/Styled";
+
 
 
 export default function AppBar() {
@@ -9,9 +10,11 @@ export default function AppBar() {
 
     return(
         <AppBarContainer>
-            <Navbutton onClick={() => goToPokedexPage(history)}>Ir Para Pokedex</Navbutton>
-            <h1>Pokedex</h1>
-            <Navbutton onClick={() => goToListPage(history)}>Voltar para lista de Pokemons</Navbutton>
+        
+            <Navbutton1 onClick={() => goToPokedexPage(history)}>Ir Para Pokedex</Navbutton1>
+            <Pokedex>Pokédex</Pokedex>
+            <Navbutton1 onClick={() => goToListPage(history)}>Voltar para lista de Pokemons</Navbutton1>
+           
         </AppBarContainer>
         
     )
