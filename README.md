@@ -1,7 +1,7 @@
 # POKEDEX
 
 <h4 align='center'>
-👉 Status: 🚧 Em construção... 🚧
+👉 Status: ✨ Finalizado. ✨
 </h4>
 
 <br />
@@ -14,8 +14,9 @@
 ### ✨ Funcionamento:
 - [x] Página que lista os Pokemons
 - [x] Rotas para pagina de detalhes, lista e pokedex
-- [ ] Detalhes Pokemon
-- [ ] Adicionar pokemon na pokedex
+- [x] Detalhes Pokemon
+- [x] Adicionar pokemon na pokedex
+- [x] Excluir pokemon da pokedex
 
 
 ### 💻 Tecnologias:
@@ -29,10 +30,10 @@ As seguintes tecnologias foram usadas na construção do projeto:
 
 ### 🔗 Link do Surge:
 
-
+- smiling-legs.surge.sh
 
 ### 📷 Prints:
-- colocar suas imagens aqui 
+
 
 <hr />
 
