@@ -24,7 +24,7 @@ export default function CardPokemon(props) {
   return (
     <Navstyle>
     <Title id={props.id}>
-      <Name>Nome: {props.name}</Name>
+      <Name> {props.name}</Name>
       <Name>{props.id}</Name>
     </Title>
       <Navimg src={image} alt={props.name}></Navimg>
