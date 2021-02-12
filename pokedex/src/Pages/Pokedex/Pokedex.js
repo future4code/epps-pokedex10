@@ -5,6 +5,7 @@ import InfoPokemon from "../../context/context";
 import { goToDetailsPage } from "../../Routes/Coordinator";
 
 
+
 export default function Pokedex() {
   const { states, setters} = useContext(InfoPokemon);
   const history = useHistory();
