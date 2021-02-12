@@ -5,9 +5,10 @@ width: 97%;
 height: 80px;
 display: flex;
 align-items: center;
+border-radius:5px;
 justify-content: space-between;
 background-color: orange;
-position: fixed;
+position:relative;
 padding-left: 20px;
 padding-right: 20px;
 top: 0;
@@ -37,5 +38,7 @@ color:black;
 export const Pokedex  = styled.h1`
 color:#ffd700;
 text-shadow: 4px 4px blue; 
+
+
 `
 

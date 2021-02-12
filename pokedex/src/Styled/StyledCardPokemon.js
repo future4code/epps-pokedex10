@@ -27,6 +27,7 @@ padding-left: 0px;
     width: 300px;
     &:hover{
         opacity: 100%;
+        box-shadow: 5px 8px 0px black;
   
 `
 export const Name = styled.h2`
