@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import InfoPokemon from "../../context/context";
+import {DetailContainer,Imag,NavDetail1, NavDetail2,NavDetail3,Name,Name1,Name2} from '../../Styled/styledDetalhes';
 
 export default function PokemonsDetails() {
   const pathParams = useParams();
@@ -16,7 +17,7 @@ export default function PokemonsDetails() {
     states.stats.map((status) => {
       return (
         <div>
-          <span>{status.stat.name}</span>
+          <span>{status.stat.name}:</span>
           <span>{status.base_stat}</span>
         </div>
       );
@@ -43,15 +44,25 @@ export default function PokemonsDetails() {
     });
 
   return (
-    <div>
+    
+  <DetailContainer>
+      <Imag>
       <img src={states.images.front_default} />
       <img src={states.images.back_default} />
-      <h1>Poderes</h1>
-      {pokeStats}
-      <h1>Tipo</h1>
-      {pokeType}
-      <h1>Ataques</h1>
-      {pokeMoves}
-    </div>
+    </Imag>
+    <NavDetail1>
+      <h2>Poderes</h2>
+      <Name>{pokeStats}</Name>
+    </NavDetail1>
+    <NavDetail2>
+      <h2>Tipo</h2>
+      <Name1>{pokeType}</Name1>
+      </NavDetail2>
+      <NavDetail3>
+      <h2>Ataques</h2>
+      <Name2>{pokeMoves}</Name2>
+      </NavDetail3>
+  </DetailContainer>
+    
   );
 }

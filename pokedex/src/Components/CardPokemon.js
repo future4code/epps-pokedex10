@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-import { Navbutton,Navimg,Navstyle,Name,Title} from "../Styled/Styled";
+import { Navbutton,Navimg,Navstyle,Name,Title} from "../Styled/StyledCardPokemon";
 
 export default function CardPokemon(props) {
   const [image, setImage] = useState("");
@@ -29,7 +29,7 @@ export default function CardPokemon(props) {
     </Title>
       <Navimg src={image} alt={props.name}></Navimg>
       <Navbutton onClick={props.addPokemon}>Add a Pokedex</Navbutton>
-      <Navbutton onClick={props.viewDetail}>ver detalhes</Navbutton>
+      <Navbutton onClick={props.viewDetail}>Ver detalhes</Navbutton>
     
     </Navstyle>
   );
