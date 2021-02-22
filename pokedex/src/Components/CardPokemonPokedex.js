@@ -2,7 +2,7 @@ import axios from "axios";
 import React, {useEffect, useState } from "react";
 
 import { Navbutton } from "../Styled/StyledCardPokemon";
-import {NavCardpoke,NameCard} from '../Styled/styleCardPokedex';
+import {NavCardpoke,NameCard, PhotoCard} from '../Styled/styleCardPokedex';
 
 export default function CardPokemonPokedex(props) {
 
@@ -28,8 +28,8 @@ export default function CardPokemonPokedex(props) {
   return (
     
       <NavCardpoke>
-      <NameCard>Nome: {props.name}</NameCard>
-      <img src={image} alt={props.name} />
+      <NameCard> {props.name}</NameCard>
+      <PhotoCard src={image} alt={props.name} />
       <Navbutton onClick={props.removePokemonFromPokedex} >Remover</Navbutton>
       <Navbutton onClick={props.viewDetail}>ver detalhes</Navbutton>
       </NavCardpoke>

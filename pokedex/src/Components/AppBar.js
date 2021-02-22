@@ -12,7 +12,7 @@ export default function AppBar() {
         <AppBarContainer>
         
             <Navbutton1 onClick={() => goToPokedexPage(history)}>Ir Para Pokedex</Navbutton1>
-            <Pokedex>Pokédex</Pokedex>
+            <Pokedex>Pokedex</Pokedex>
             <Navbutton1 onClick={() => goToListPage(history)}>Voltar para lista de Pokemons</Navbutton1>
            
         </AppBarContainer>

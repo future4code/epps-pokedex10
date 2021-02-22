@@ -7,7 +7,7 @@ display: flex;
 align-items: center;
 border-radius:5px;
 justify-content: space-between;
-background-color: orange;
+background-color: #8e0000;
 position:relative;
 padding-left: 20px;
 padding-right: 20px;
@@ -19,10 +19,10 @@ box-shadow: 5px 8px 0px black;
   
 
 `
-export const Navbutton1 = styled.div`
+export const Navbutton1 = styled.button`
 padding: 10px;
-background-color: red;
-color:black;
+background-color: #c62828;
+color:#ffd700;
   border: none;
   border-radius: 5px;
   margin: 5px;

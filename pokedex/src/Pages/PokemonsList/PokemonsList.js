@@ -55,7 +55,7 @@ export default function PokemonsList() {
 
   return (
     <div>
-      <NavList>PokemonsList</NavList>
+      <NavList></NavList>
       {pokeLista}
     </div>
   );

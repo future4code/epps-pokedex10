@@ -1,52 +1,58 @@
 import styled from 'styled-components'
 
-export const Navimg = styled.img`
-height: 180px;
-    width: 180px; 
-    z-index : 3;
-    cursor: pointer;
-    margin: 30px 30px 30px 30px
-   
-    
-`
+
 export const Navstyle = styled.div`
 
 display: inline-block;
-background-color: orange;
+background-color: #ffd349;
+padding: 35px;
+border: 5px solid black;
+left: 2px;
+position: relative;
+margin: 0;
 flex-direction: column;
 padding-right: 27px;
-padding-left: 0px;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    opacity: 80%;
-    overflow: hidden;
-    position: relative;
-    border-radius:5px ;
-    height: 300px;
-    width: 300px;
-    &:hover{
-        opacity: 100%;
-        box-shadow: 5px 8px 0px black;
+padding-left: 27px;
+margin: 50px 1px 20px 20px;
+opacity: 80%;
+overflow: hidden;
+position: relative;
+border-radius:5px ;
+&:hover{
+    opacity: 100%;
+    box-shadow: 5px 8px 0px black;
+        
   
 `
 export const Name = styled.h2`
 color: white;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding-top:10px;
+
+    
+`
+export const Navimg = styled.img`
+display: block;
+margin-top: 2%;
+margin-left: auto;
+margin-right: auto;
+width: 250px;
+height: 250px;
+border-bottom:  5px solid black; 
+   
     
 `
 
-export const Title = styled.div`
+export const Title = styled.h2`
 position: absolute;
-top: 0px;
+top: -20px;
 left: 0px;
 width: 95%;
 height: 40px;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 padding-left: 5px;
 padding-right: 20px;
 background-color: black;
@@ -57,19 +63,22 @@ font-size: 14px;
 
 export const Navbutton = styled.button`
 padding: 10px;
-background-color: red;
+ background-color: #c62828;
 float: center;
-
-  border: none;
-  border-radius: 8px;
-  margin: 10px;
-  padding-right:35px;
-  box-shadow: 5px 5px 0px black;
-  cursor: pointer;
-  outline: none;
-  cursor: pointer;
-  transition: all 400ms ease-in-out;
-  &:hover {
+text-align: center;
+color: white;
+border: none;
+border-radius: 8px;
+margin: 10px;
+margin-top: 10%;
+margin-bottom: 3%;
+padding-right:35px;
+box-shadow: 5px 5px 0px black;
+cursor: pointer;
+outline: none;
+transition: all 400ms ease-in-out;
+&:hover {
     transform: scale(1.1);
+
   
 `
